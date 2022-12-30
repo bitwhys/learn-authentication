@@ -6,7 +6,7 @@
     "start": "node ./bin/www",
     "dev": "concurrently 'yarn:watch-*'",
     "watch-server": "nodemon",
-    "watch-browser": "browser-sync start --proxy 'localhost:3000' --files 'public/**/*.{css,png,jpg},views/*.hbs'",
+    "watch-browser": "browser-sync start --proxy 'localhost:3000' --files 'public/**/*.{css,png,jpg},views/*.hbs',app.js,routes/**/*.js",
     "watch-tailwind": "tailwindcss -i ./tailwind.css -o ./public/stylesheets/style.css --watch"
   },
   "dependencies": {
